@@ -1,0 +1,21 @@
+.table td{
+    border: 1px solid cadetblue;
+    width: 170px;
+    align-items: center;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.B{
+ font-weight: bold;
+ color: rgb(33, 44, 86);
+}
+
+h2{
+  font-family: cursive;
+  color: crimson;
+}

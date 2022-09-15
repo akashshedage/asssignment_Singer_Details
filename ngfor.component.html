@@ -1,0 +1,78 @@
+<!-- <p>ngfor works!</p>
+
+<div *ngFor="let Movie of movies">
+
+    <div>
+        {{Movie.title}}
+    </div>
+    <div>
+        {{Movie.director}}
+    </div>
+    <div>
+        {{Movie.cast}}
+    </div>
+    <div>
+        {{Movie.releaseDate}}
+    </div>
+
+</div> -->
+
+<h2>Singer Details</h2>
+<div *ngFor="let Song of songs">
+<table class="table">
+    <tr>
+        <td class="B">Singer Name</td>
+        <td>{{Song.name}}</td>
+        <td class="B">Total Songs</td>
+        <td>{{Song.totalSongs}}</td>
+        <td class="B">Hit Song</td>
+        <td>{{Song.hitSong}}</td>
+        <td class="B">Movie Name</td>
+        <td>{{Song.movieName}}</td>
+    </tr>
+    <!-- <tr>
+        <td>Total Songs</td>
+        <td>{{Song.totalSongs}}</td>
+    </tr>
+    <tr>
+        <td>Hit Song</td>
+        <td>{{Song.hitSong}}</td>
+    </tr>
+    <tr>
+        <td>Movie Name</td>
+        <td>{{Song.movieName}}</td>
+    </tr> -->
+</table>
+</div>
+
+
+<h2>Singer who has sang more than 50 songs</h2>
+<div *ngFor="let Song of songs" >
+
+    <div *ngIf="Song.totalSongs > 50">
+        <table class="table">
+            <tr>
+                <td class="B">Singer Name</td>
+                <td>{{Song.name}}</td>
+                <td class="B">Total Songs</td>
+                <td>{{Song.totalSongs}}</td>
+                <td class="B"> Hit Song</td>
+                <td>{{Song.hitSong}}</td>
+                <td class="B"> Movie Name</td>
+                <td> {{Song.movieName}}</td>
+
+            </tr>
+        </table>
+    <!-- Singer Name:    {{Song.name}}
+    </div>
+    <div *ngIf="Song.totalSongs > 50">
+    Total Songs:    {{Song.totalSongs}}
+    </div >
+    <div *ngIf="Song.totalSongs > 50">
+    Hit Song:    {{Song.hitSong}}
+    </div>
+    <div *ngIf="Song.totalSongs > 50">
+    Movie Name:    {{Song.movieName}}
+    </div> -->
+    
+</div>
